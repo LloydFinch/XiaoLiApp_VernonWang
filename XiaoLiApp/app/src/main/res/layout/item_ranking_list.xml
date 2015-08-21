@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fff"
+              android:gravity="center_vertical"
+		>
+
+	<TextView
+			android:id="@+id/activity_ranking_item_rank"
+			android:layout_width="40dp"
+			android:layout_height="match_parent"
+			android:padding="15dp"
+			android:text="4"
+			android:gravity="center"
+			android:background="#fff5f5f5"
+			android:layout_marginLeft="15dp"
+			/>
+
+	<ImageView
+			android:id="@+id/activity_ranking_item_head"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:src="@mipmap/head"
+			android:background="#0000"
+			android:layout_marginLeft="30dp"
+			/>
+
+	<TextView
+			android:id="@+id/activity_ranking_item_name"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:text="阿妹"
+			android:layout_margin="15dp"
+			/>
+
+	<TextView
+			android:id="@+id/activity_ranking_item_grade"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="9.8分"
+			android:gravity="center"
+			android:layout_marginRight="20dp"
+			/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+		>
+
+	<ImageView
+			android:id="@+id/activity_recommend_plan_item_image"
+			android:layout_width="match_parent"
+			android:layout_height="125dp"
+			android:src="@mipmap/show_pager"
+	        android:background="@drawable/shape_radius_image_recommend"
+			/>
+
+	<TextView
+			android:id="@+id/activity_recommend_plan_item_text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="版权声明:本文为博主原创文章,未经博主允许不得转载.草草草草草草,版权声明:本文为博主原创文章,未经博主允许不得转载."
+			android:layout_marginTop="10dp"
+			/>
+</LinearLayout>

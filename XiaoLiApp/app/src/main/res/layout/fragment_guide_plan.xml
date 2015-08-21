@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.xiaoliapp.app.fragments.GuidePlanFragment"
+		>
+	
+	<RadioGroup
+			android:id="@+id/fragment_guide_plan_tab_bar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="#fff"
+			android:padding="10dp"
+			>
+
+		<RadioButton
+				android:id="@+id/fragment_guide_plan_tab_station"
+				android:text="情理情景"
+				style="@style/fragment_guide_plan_radio"
+				/>
+
+		<RadioButton
+				android:id="@+id/fragment_guide_plan_tab_object"
+				android:text="情理对象"
+				style="@style/fragment_guide_plan_radio"
+				/>
+
+		<RadioButton
+				android:id="@+id/fragment_guide_plan_tab_love"
+				android:text="对象爱好"
+				style="@style/fragment_guide_plan_radio"
+				/>
+
+		<RadioButton
+				android:id="@+id/fragment_guide_plan_tab_feast"
+				android:text="节日送礼"
+				style="@style/fragment_guide_plan_radio"
+				/>
+	</RadioGroup>
+
+	<FrameLayout
+			android:id="@+id/fragment_guide_plan_content"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			></FrameLayout>
+
+</LinearLayout>

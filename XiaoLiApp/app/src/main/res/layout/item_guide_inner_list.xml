@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="5dp"
+		>
+
+	<ImageView
+			android:id="@+id/item_guide_inner_list_image"
+			android:layout_width="match_parent"
+			android:layout_height="125dp"
+			android:src="@mipmap/show_pager"
+			android:background="@drawable/shape_radius_image_recommend"
+			/>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="#0000"
+			android:layout_marginTop="5dp"
+			>
+
+		<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="#0000"
+				/>
+
+		<CheckBox
+				android:id="@+id/item_guide_inner_list_msg"
+				android:drawableLeft="@mipmap/mystory"
+				android:text="23"
+				style="@style/fragment_guide_item_list"
+				/>
+
+		<CheckBox
+				android:id="@+id/item_guide_inner_list_scan"
+				android:drawableLeft="@mipmap/scan"
+				android:text="328"
+				style="@style/fragment_guide_item_list"
+				/>
+
+		<CheckBox
+				android:id="@+id/item_guide_inner_list_share"
+				android:drawableLeft="@mipmap/share"
+				android:text="92"
+				style="@style/fragment_guide_item_list"
+				/>
+
+		<CheckBox
+				android:id="@+id/item_guide_inner_list_collection"
+				android:drawableLeft="@mipmap/collection"
+				android:text="14"
+				style="@style/fragment_guide_item_list"
+				/>
+	</LinearLayout>
+</LinearLayout>

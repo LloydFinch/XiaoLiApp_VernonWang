@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+		>
+
+	<ImageView
+			android:id="@+id/relation_item_head"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:src="@mipmap/head"
+			android:background="#0000"
+			/>
+
+	<TextView
+			android:id="@+id/relation_item_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/relation_item_head"
+			android:text="西门庆"
+			/>
+
+	<TextView
+			android:id="@+id/relation_item_number"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/relation_item_head"
+			android:layout_below="@id/relation_item_name"
+			android:layout_marginTop="10dp"
+			android:text="182-3659-6287"
+			/>
+
+	<CheckBox
+			android:id="@+id/relation_item_grade"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:button="@null"
+			android:drawableLeft="@mipmap/grade"
+			android:text="9.8"
+			android:layout_alignParentRight="true"
+			/>
+
+	<CheckBox
+			android:id="@+id/relation_item_impress"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:button="@null"
+			android:drawableLeft="@mipmap/impress"
+			android:text="92"
+			android:layout_toLeftOf="@id/relation_item_grade"
+			/>
+
+	<CheckBox
+			android:id="@+id/relation_item_gifts"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:button="@null"
+			android:text="  "
+			android:drawableLeft="@mipmap/card"
+			android:layout_toLeftOf="@id/relation_item_impress"
+			/>
+</RelativeLayout>

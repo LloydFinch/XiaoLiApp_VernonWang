@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.xiaoliapp.app.fragments.GuideFragment"
+              android:orientation="vertical"
+		>
+
+	<RadioGroup
+			android:id="@+id/fragment_guide_top_tab"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="#ffdf1135"
+			android:gravity="center_vertical"
+			android:paddingTop="10dp"
+			>
+
+		<ImageButton
+				android:id="@+id/relation_top_btn_search"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@mipmap/search_small"
+				android:onClick="onClick"
+				android:background="#0000"
+				/>
+
+		<RadioButton
+				android:id="@+id/fragment_guide_top_tab_plan"
+				style="@style/fragment_guide_top_radio"
+				android:text="方案"
+				android:layout_marginLeft="30dp"
+				/>
+
+		<RadioButton
+				android:id="@+id/fragment_guide_top_tab_story"
+				style="@style/fragment_guide_top_radio"
+				android:text="故事"
+				android:layout_marginLeft="20dp"
+				/>
+	</RadioGroup>
+
+	<android.support.v4.view.ViewPager
+			android:id="@+id/fragment_guide_top_pager"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			></android.support.v4.view.ViewPager>
+</LinearLayout>

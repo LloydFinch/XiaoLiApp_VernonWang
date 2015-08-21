@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffe3e3e3"
+              android:padding="30dp"
+              android:gravity="center"
+		>
+
+	<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:lineSpacingMultiplier="1.5"
+			android:text="此好友为一度人脉尼玛的好友,点击确定发送短信请求张三介绍认识."
+			android:gravity="center"
+			></TextView>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="20dp"
+			android:gravity="center"
+			>
+
+		<Button
+				android:id="@+id/dialog_button_ok"
+				style="@style/button_radius"
+				android:text="确定"
+				/>
+
+		<Button
+				android:id="@+id/dialog_button_cancel"
+				style="@style/button_radius"
+				android:text="取消"
+				android:layout_marginLeft="20dp"
+				/>
+	</LinearLayout>
+</LinearLayout>

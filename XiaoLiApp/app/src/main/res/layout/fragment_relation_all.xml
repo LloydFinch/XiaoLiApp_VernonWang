@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.xiaoliapp.app.fragments.RelationAllFragment"
+		>
+
+	<ListView
+			android:id="@+id/relation_content_all_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:divider="@null"
+			/>
+
+	<TextView
+			android:id="@+id/dialog"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:textColor="#ffffffff"
+			android:textSize="30.0dip"
+			android:visibility="invisible"
+			/>
+
+	<com.xiaoliapp.app.librarys.sortlistview.SideBar
+			android:id="@+id/sidebar"
+			android:layout_width="30dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="right|center"
+			/>
+</FrameLayout>

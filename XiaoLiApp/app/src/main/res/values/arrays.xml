@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="date">
+        <item>阿妹</item>
+        <item>阿郎</item>
+        <item>如来佛</item>
+        <item>孙悟空</item>
+        <item>奥特曼</item>
+        <item>七龙珠</item>
+        <item>王力宏</item>
+        <item>汪峰</item>
+        <item>傻蛋</item>
+        <item>元始天尊</item>
+        <item>张伟</item>
+        <item>张学友</item>
+        <item>哆啦A梦</item>
+        <item>买买提</item>
+        <item>白水水</item>
+        <item>王八蛋</item>
+        <item>陈龙</item>
+        <item>白痴</item>
+        <item>哈林</item>
+        <item>高进</item>
+        <item>高雷</item>
+        <item>阮小二</item>
+        <item>太上老君</item>
+        <item>苏醒</item>
+        <item>淘宝</item>
+        <item>准提道人</item>
+        <item>百度</item>
+        <item>宋冬野</item>
+        <item>熊大</item>
+        <item>袁成杰</item>
+        <item>接引道人</item>
+        <item>齐大友</item>
+        <item>齐天大圣</item>
+        <item>品冠</item>
+        <item>吴克群</item>
+        <item>BOBO</item>
+        <item>Jobs</item>
+        <item>动力火车</item>
+        <item>伍佰</item>
+        <item>#黑猫警长</item>
+        <item>阿里巴巴</item>
+        <item>Jack</item>
+        <item>~贝吉塔</item>
+    </string-array>
+
+</resources>

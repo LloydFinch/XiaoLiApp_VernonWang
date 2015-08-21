@@ -1,0 +1,23 @@
+<resources>
+	<string name="app_name">XiaoLiAPP</string>
+	
+	<string name="hello_world">Hello world!</string>
+	<string name="action_settings">Settings</string>
+	<string name="title_activity_login">LoginActivity</string>
+	<string name="title_activity_base">BaseActivity</string>
+	<string name="title_activity_register">RegisterActivity</string>
+	<string name="title_activity_xlbase">XLBaseActivity</string>
+	<string name="title_activity_normal">NormalActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="title_activity_send_gift">ImpressActivity</string>
+	<string name="title_activity_ranking">RankingActivity</string>
+	<string name="title_activity_impress_des">ImpressDesActivity</string>
+	<string name="title_activity_grade_pay">GradePayActivity</string>
+	<string name="title_activity_recom_plan">RecomPlanActivity</string>
+	<string name="title_activity_relation">RelationActivity</string>
+	<string name="title_activity_guide">GuideActivity</string>
+	<string name="title_activity_discover">DiscoverActivity</string>
+	<string name="title_activity_profile">ProfileActivity</string>
+</resources>

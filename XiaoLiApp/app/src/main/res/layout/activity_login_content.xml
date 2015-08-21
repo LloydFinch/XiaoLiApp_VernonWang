@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+		>
+
+	<LinearLayout
+			android:layout_below="@id/base_block_top"
+			android:id="@+id/login_block_phone"
+			android:layout_marginTop="30dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="30dp"
+			android:layout_marginBottom="20dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			>
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="手机号"
+				/>
+
+		<EditText
+				android:id="@+id/login_phone_number"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="40dp"
+				android:hint="请输入所注册的手机号"
+				android:textSize="12sp"
+				android:background="@drawable/shape_radius_back_edittext"
+				android:layout_marginLeft="10dp"
+				/>
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_below="@id/login_block_phone"
+			android:id="@+id/login_block_psw"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="30dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			>
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="密码 "
+				/>
+
+		<EditText
+				android:id="@+id/login_password"
+				android:layout_width="0dp"
+				android:layout_weight="0.1"
+				android:layout_height="40dp"
+				android:hint="请输入6-12位密码"
+				android:inputType="textPassword"
+				android:textSize="12sp"
+				android:background="@drawable/shape_radius_back_edittext"
+				android:layout_marginLeft="20dp"
+				/>
+	</LinearLayout>
+
+	<TextView
+			android:id="@+id/login_for_psw"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="忘记密码?"
+			android:textSize="12sp"
+			android:textColor="#f99"
+			android:layout_marginLeft="54dp"
+			android:layout_below="@+id/login_block_psw"
+			android:layout_alignLeft="@+id/login_block_psw"
+			android:onClick="onClick"
+			/>
+
+	<LinearLayout
+			android:layout_below="@id/login_for_psw"
+			android:id="@+id/login_block_button"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_marginTop="30dp"
+			>
+
+		<Button
+				android:id="@+id/login_button_login"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:text="登录"
+				android:textColor="#fff"
+				android:background="@drawable/shape_radius_button_login"
+				android:onClick="onClick"
+				/>
+
+		<Button
+				android:id="@+id/login_button_register"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:text="注册"
+				android:textColor="#fff"
+				android:background="@drawable/shape_radius_button_register"
+				android:layout_marginLeft="30dp"
+				android:onClick="onClick"
+				/>
+	</LinearLayout>
+
+	<Button
+			android:id="@+id/login_go_look"
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:text="去看看"
+			android:layout_marginTop="30dp"
+			android:layout_below="@+id/login_block_button"
+			android:layout_centerHorizontal="true"
+			android:onClick="onClick"
+			/>
+</RelativeLayout>

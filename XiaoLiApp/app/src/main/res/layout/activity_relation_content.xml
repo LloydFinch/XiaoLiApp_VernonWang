@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.xiaoliapp.app.fragments.RelationFragment"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffc11121"
+            android:padding="10dp"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_radius_back_edittext"
+                android:gravity="center_vertical"
+                >
+
+            <ImageButton
+                    android:id="@+id/relation_top_btn_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search"
+                    android:onClick="onClick"
+                    android:background="#0000"
+                    />
+
+            <com.xiaoliapp.app.librarys.sortlistview.ClearEditText
+                    android:id="@+id/relation_top_txt_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:hint="搜索联系人/手机"
+                    android:background="@drawable/shape_radius_search_edittext"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffdee7"
+            android:orientation="vertical"
+            >
+
+        <RadioGroup
+                android:id="@+id/relation_item_func1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+            <CheckBox
+                    android:id="@+id/relation_item_func_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/group"
+                    android:onClick="onClick"
+                    />
+
+            <CheckBox
+                    android:id="@+id/relation_item_func_relation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/ranking"
+                    android:onClick="onClick"
+                    />
+
+            <CheckBox
+                    android:id="@+id/relation_item_func_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/grade"
+                    android:onClick="onClick"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/relation_item_func2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+            <CheckBox
+                    android:id="@+id/relation_item_func_impress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/group"
+                    android:onClick="onClick"
+                    />
+
+            <CheckBox
+                    android:id="@+id/relation_item_func_ranking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/ranking"
+                    android:onClick="onClick"
+                    />
+
+            <CheckBox
+                    android:id="@+id/relation_item_func_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/grade"
+                    android:onClick="onClick"
+                    />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RadioGroup
+            android:id="@+id/relation_center_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#fff"
+            >
+
+        <RadioButton
+                android:id="@+id/relation_center_tab_all"
+                style="@style/fragment_guide_top_radio"
+                android:text="全部"
+                android:textColor="@color/color_selector"
+                />
+        <RadioButton
+                android:id="@+id/relation_center_tab_group"
+                style="@style/fragment_guide_top_radio"
+                android:text="分组"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/color_selector"
+                />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/relation_center_content_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

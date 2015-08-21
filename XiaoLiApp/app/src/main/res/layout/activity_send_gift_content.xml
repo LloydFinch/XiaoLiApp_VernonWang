@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+		>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			>
+
+		<LinearLayout
+				android:id="@+id/activity_impress_line1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="15dp"
+				android:paddingRight="10dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:gravity="center_vertical"
+				android:layout_marginTop="10dp"
+		        android:background="#fff"
+				>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/recommend"
+					/>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:text="推荐方案"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="30dp"
+					/>
+
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textSize="15sp"
+					android:text="先为TA评价印象"
+					android:textColor="#ffd1a0a4"
+					/>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text=">"
+					android:textSize="15sp"
+					/>
+		</LinearLayout>
+
+		<LinearLayout
+				android:id="@+id/activity_impress_line2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="15dp"
+				android:paddingRight="10dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:gravity="center_vertical"
+				android:layout_marginTop="10dp"
+				android:background="#fff"
+				>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/mode"
+					/>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:text="祝福语模板"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="30dp"
+					/>
+
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textSize="15sp"
+					android:text=""
+					android:textColor="#ffd1a0a4"
+					android:visibility="invisible"
+					/>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text=">"
+					android:textSize="15sp"
+					/>
+		</LinearLayout>
+
+		<LinearLayout
+				android:id="@+id/activity_impress_line3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="15dp"
+				android:paddingRight="10dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:gravity="center_vertical"
+				android:layout_marginTop="10dp"
+				android:background="#fff"
+				>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/card"
+					/>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:text="发送卡券"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="30dp"
+					/>
+
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textSize="15sp"
+					android:text=""
+					android:textColor="#ffd1a0a4"
+			        android:visibility="invisible"
+					/>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text=">"
+					android:textSize="15sp"
+					/>
+		</LinearLayout>
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="15dp"
+				android:paddingRight="25dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:gravity="center_vertical"
+				android:layout_marginTop="20dp"
+				android:background="#fff9f9f9"
+				>
+			<EditText
+					android:id="@+id/activity_impress_txt_comment"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+			        android:layout_weight="1"
+			        android:background="@drawable/shape_radius_back_edittext"
+					/>
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+			        android:background="#0000"
+			        android:text="发表"
+			        android:textColor="#ff82a5d3"
+			        android:layout_marginLeft="20dp"
+					/>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

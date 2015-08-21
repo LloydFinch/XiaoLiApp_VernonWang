@@ -1,0 +1,73 @@
+<resources>
+	
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+	</style>
+
+	<style name="impress_tag">
+		<item name="android:paddingLeft">10dp</item>
+		<item name="android:paddingRight">10dp</item>
+		<item name="android:paddingTop">4dp</item>
+		<item name="android:paddingBottom">4dp</item>
+		<item name="android:background">#ff008ae6</item>
+		<item name="android:textColor">#fff</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_marginRight">10dp</item>
+	</style>
+
+	<style name="float_radio">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:button">@null</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">10sp</item>
+	</style>
+
+	<style name="button_radius">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@drawable/shape_radius_button_login</item>
+		<item name="android:textColor">#fff</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_marginTop">5dp</item>
+		<item name="android:layout_marginBottom">5dp</item>
+		<item name="android:layout_marginLeft">10dp</item>
+		<item name="android:layout_marginRight">10dp</item>
+	</style>
+
+	<style name="dialog_notitle">
+		<item name="android:theme">@style/dialog_notitle</item>
+	</style>
+
+	<style name="fragment_guide_top_radio">
+		<item name="android:layout_width">120dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingTop">5dp</item>
+		<item name="android:paddingBottom">5dp</item>
+		<item name="android:paddingLeft">15dp</item>
+		<item name="android:paddingRight">15dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:button">@null</item>
+		<item name="android:background">#fff</item>
+		<item name="android:textColor">@color/color_selector</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+
+	<style name="fragment_guide_plan_radio">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:button">@null</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="fragment_guide_item_list">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:button">@null</item>
+		<item name="android:gravity">center</item>
+	</style>
+</resources>

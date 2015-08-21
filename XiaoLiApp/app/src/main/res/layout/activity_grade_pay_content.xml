@@ -1,0 +1,281 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.xiaoliapp.app.activity.GradePayActivity"
+		>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="15dp"
+				android:paddingRight="10dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:gravity="center_vertical"
+				android:layout_marginTop="10dp"
+				android:background="#fff"
+				>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/grade_pay"
+					/>
+
+			<TextView
+					android:id="@+id/activity_grade_pay_line1_comment"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:text="打分字段词条"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="30dp"
+					/>
+
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text=""
+					android:textColor="#ffd1a0a4"
+					android:visibility="invisible"
+					/>
+
+			<TextView
+					android:id="@+id/activity_grade_pay_line1_number"
+					style="@style/impress_tag"
+					android:text="8分:"
+					android:textSize="20sp"
+					/>
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="15dp"
+				android:paddingRight="10dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:gravity="center_vertical"
+				android:layout_marginTop="10dp"
+				android:background="#fff"
+				>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/grade_pay"
+					/>
+
+			<TextView
+					android:id="@+id/activity_grade_pay_line2_comment"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:text="打分字段词条"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="30dp"
+					/>
+
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text=""
+					android:textColor="#ffd1a0a4"
+					android:visibility="invisible"
+					/>
+
+			<TextView
+					android:id="@+id/activity_grade_pay_line2_number"
+					style="@style/impress_tag"
+					android:text="8分:"
+					android:textSize="20sp"
+					/>
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="15dp"
+				android:paddingRight="10dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:gravity="center_vertical"
+				android:layout_marginTop="10dp"
+				android:background="#fff"
+				>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/grade_pay"
+					/>
+
+			<TextView
+					android:id="@+id/activity_grade_pay_line3_comment"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:text="打分字段词条"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="30dp"
+					/>
+
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text=""
+					android:textColor="#ffd1a0a4"
+					android:visibility="invisible"
+					/>
+
+			<TextView
+					android:id="@+id/activity_grade_pay_line3_number"
+					style="@style/impress_tag"
+					android:text="8分:"
+					android:textSize="20sp"
+					/>
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="15dp"
+				android:paddingRight="10dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:gravity="center_vertical"
+				android:layout_marginTop="10dp"
+				android:background="#fff"
+				>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/grade_pay"
+					/>
+
+			<TextView
+					android:id="@+id/activity_grade_pay_line4_comment"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:text="打分字段词条"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="30dp"
+					/>
+
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text=""
+					android:textColor="#ffd1a0a4"
+					android:visibility="invisible"
+					/>
+
+			<TextView
+					android:id="@+id/activity_grade_pay_line4_number"
+					style="@style/impress_tag"
+					android:text="8分:"
+					android:textSize="20sp"
+					/>
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="15dp"
+				android:paddingRight="10dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:gravity="center_vertical"
+				android:layout_marginTop="10dp"
+				android:background="#fff"
+				>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/grade_pay"
+					/>
+
+			<TextView
+					android:id="@+id/activity_grade_pay_line5_comment"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:text="打分字段词条"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="30dp"
+					/>
+
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text=""
+					android:textColor="#ffd1a0a4"
+					android:visibility="invisible"
+					/>
+
+			<TextView
+					android:id="@+id/activity_grade_pay_line5_number"
+					style="@style/impress_tag"
+					android:text="8分:"
+					android:textSize="20sp"
+					/>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:padding="5dp"
+			android:layout_alignParentBottom="true"
+			>
+
+		<CheckBox
+				android:id="@+id/activity_impress_des_check_hide"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="匿名"
+				android:textSize="15sp"
+				/>
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="(你的昵称将不被大家看到)"
+				android:textSize="10sp"
+				/>
+
+		<Button
+				android:id="@+id/activity_impress_des_button_submit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/shape_radius_button_login"
+				android:text="提交"
+				android:textSize="15sp"
+				android:textColor="#fff"
+				/>
+	</LinearLayout>
+</RelativeLayout>

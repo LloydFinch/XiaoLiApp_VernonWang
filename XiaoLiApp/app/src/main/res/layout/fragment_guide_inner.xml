@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.xiaoliapp.app.fragments.GuideInnerFragment"
+		>
+	
+	<ListView
+			android:id="@+id/fragment_guide_inner_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#fff"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			>
+	</ListView>
+</FrameLayout>

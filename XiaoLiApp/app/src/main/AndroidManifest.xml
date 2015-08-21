@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xiaoliapp.app"
+		>
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+	<application
+			android:allowBackup="true"
+			android:icon="@mipmap/icon"
+			android:label="@string/app_name"
+			android:theme="@style/AppTheme"
+			>
+		<activity
+				android:name=".EnterActivity"
+				android:label="@string/app_name"
+				>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+				android:name=".activity.LoginActivity"
+				android:label="@string/title_activity_login"
+				android:launchMode="singleTask"
+				>
+		</activity>
+		<activity
+				android:name=".activity.RegisterActivity"
+				android:label="@string/title_activity_register"
+				>
+		</activity>
+		<activity
+				android:name=".activity.SendGiftActivity"
+				android:label="@string/title_activity_send_gift"
+				>
+		</activity>
+		<activity
+				android:name=".activity.RankingActivity"
+				android:label="@string/title_activity_ranking"
+				>
+		</activity>
+		<activity
+				android:name=".activity.ImpressDesActivity"
+				android:label="@string/title_activity_impress_des"
+				android:windowSoftInputMode="adjustPan"
+				>
+		</activity>
+		<activity
+				android:name=".activity.GradePayActivity"
+				android:label="@string/title_activity_grade_pay"
+				>
+		</activity>
+		<activity
+				android:name=".activity.RecommendPlanActivity"
+				android:label="@string/title_activity_recom_plan"
+				>
+		</activity>
+		<activity
+				android:name=".activity.RelationActivity"
+				android:label="@string/title_activity_relation"
+				android:windowSoftInputMode="adjustPan"
+				android:launchMode="singleTask"
+				>
+			<intent-filter>
+				<action android:name="com.xiaoli.activity.RelationActivity">
+				</action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		<activity
+				android:name=".activity.GuideActivity"
+				android:label="@string/title_activity_guide"
+				android:launchMode="singleTask"
+				>
+			<intent-filter>
+				<action android:name="com.xiaoli.activity.GuideActivity">
+				</action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		<activity
+				android:name=".activity.DiscoverActivity"
+				android:label="@string/title_activity_discover"
+				android:launchMode="singleTask"
+				>
+			<intent-filter>
+				<action android:name="com.xiaoli.activity.DiscoverActivity">
+				</action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		<activity
+				android:name=".activity.ProfileActivity"
+				android:label="@string/title_activity_profile"
+				android:launchMode="singleTask"
+				>
+			<intent-filter>
+				<action android:name="com.xiaoli.activity.ProfileActivity">
+				</action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>
