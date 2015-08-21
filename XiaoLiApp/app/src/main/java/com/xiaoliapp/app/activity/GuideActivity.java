@@ -1,21 +1,24 @@
 package com.xiaoliapp.app.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 import com.xiaoliapp.app.R;
 import com.xiaoliapp.app.adapter.CommonPagerAdapter;
+import com.xiaoliapp.app.constants.Constants;
 import com.xiaoliapp.app.fragments.GuidePlanFragment;
 import com.xiaoliapp.app.fragments.GuideStoryFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class GuideActivity extends BaseActivity implements ViewPager.OnPageChangeListener {
+public class GuideActivity extends BaseActivity implements ViewPager.OnPageChangeListener, View.OnClickListener {
 
 
 	private RadioGroup topRadioGroup;
@@ -62,6 +65,8 @@ public class GuideActivity extends BaseActivity implements ViewPager.OnPageChang
 				id = R.id.fragment_guide_top_tab_plan;
 				break;
 			case 1:
+
+				//TODO 情礼攻略故事部分的Fragment内容待改
 				id = R.id.fragment_guide_top_tab_story;
 				break;
 		}
@@ -96,5 +101,32 @@ public class GuideActivity extends BaseActivity implements ViewPager.OnPageChang
 			super.onBackPressed();
 		}
 		exit = true;
+	}
+
+	public void onClick(View v) {
+		switch (v.getId()) {
+			case R.id.relation_top_btn_search:
+
+				//搜索
+				startSearch();
+				break;
+			default:
+				break;
+		}
+	}
+
+	//启动搜索Activity
+	private void startSearch() {
+		Intent intent = new Intent(this, SearchActivity.class);
+		startActivityForResult(intent, Constants.CODE_ACTIVITY_GUIDE);
+	}
+
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+		if (requestCode == Constants.CODE_ACTIVITY_GUIDE && resultCode == Constants.CODE_ACTIVITY_SEARCH) {
+
+			//TODO 处理intent返回的数据
+
+		}
 	}
 }

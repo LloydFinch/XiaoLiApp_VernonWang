@@ -8,8 +8,6 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import android.widget.HorizontalScrollView;
 import com.xiaoliapp.app.R;
 import com.xiaoliapp.app.adapter.CommonPagerAdapter;
 import com.xiaoliapp.app.myview.MyHorScrollView;

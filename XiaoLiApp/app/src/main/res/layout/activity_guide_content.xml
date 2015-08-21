@@ -14,6 +14,7 @@
 			android:background="#ffdf1135"
 			android:gravity="center_vertical"
 			android:paddingTop="10dp"
+			android:paddingBottom="5dp"
 			>
 
 		<ImageButton

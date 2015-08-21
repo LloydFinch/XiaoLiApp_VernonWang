@@ -66,6 +66,7 @@
 	</LinearLayout>
 
 	<ScrollView
+			android:id="@+id/activity_impress_des_scroll"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
@@ -92,6 +93,7 @@
 				<TextView
 						style="@style/impress_tag"
 						android:text="傻逼新球"
+						android:layout_marginRight="10dp"
 						/>
 
 				<ImageButton
@@ -101,7 +103,7 @@
 						android:src="@mipmap/add"
 						android:scaleType="fitXY"
 						android:background="#0000"
-				        android:layout_marginBottom="5dp"
+						android:layout_marginBottom="5dp"
 						/>
 			</com.xiaoliapp.app.librarys.org.apmem.tools.layouts.FlowLayout>
 
@@ -112,7 +114,7 @@
 			android:id="@+id/activity_impress_des_txt_tag"
 			android:layout_marginTop="15dp"
 			android:layout_width="match_parent"
-			android:layout_height="200dp"
+			android:layout_height="100dp"
 			android:gravity="start"
 			android:background="@drawable/shape_radius_back_edittext"
 			/>

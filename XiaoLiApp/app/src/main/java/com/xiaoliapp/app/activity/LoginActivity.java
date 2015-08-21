@@ -89,14 +89,13 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
 				break;
 			case R.id.login_go_look:
 				//TODO 去看看
-				Toast.makeText(this, "未实现", Toast.LENGTH_SHORT).show();
+				startActivity(new Intent(this, GuideActivity.class));
 				break;
 			default:
 				break;
 		}
 		if (code > 0) {
-			//new Thread(this).start();
-			startActivity(new Intent(this, RelationActivity.class));
+			new Thread(this).start();
 		}
 	}
 

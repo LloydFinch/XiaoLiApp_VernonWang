@@ -1,5 +1,6 @@
 package com.xiaoliapp.app.activity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -10,7 +11,8 @@ import android.widget.TextView;
 import com.xiaoliapp.app.R;
 
 //公共的Activity,向其他Activity提供顶部和底部布局
-public abstract class BaseActivity extends FragmentActivity implements RadioGroup.OnCheckedChangeListener {
+public abstract class BaseActivity extends FragmentActivity implements RadioGroup.OnCheckedChangeListener, View
+		.OnClickListener {
 
 	protected RadioGroup bottomTab;
 
@@ -78,5 +80,12 @@ public abstract class BaseActivity extends FragmentActivity implements RadioGrou
 		}
 		if (intent.getAction() != null)
 			startActivity(intent);
+	}
+
+	public void onClick(View v) {
+		switch (v.getId()) {
+			case R.id.base_top_back:
+				super.onBackPressed();
+		}
 	}
 }

@@ -20,4 +20,5 @@
 	<string name="title_activity_guide">GuideActivity</string>
 	<string name="title_activity_discover">DiscoverActivity</string>
 	<string name="title_activity_profile">ProfileActivity</string>
+	<string name="title_activity_search">SearchActivity</string>
 </resources>

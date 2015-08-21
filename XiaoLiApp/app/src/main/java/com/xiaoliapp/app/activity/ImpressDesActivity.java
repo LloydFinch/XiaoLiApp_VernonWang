@@ -1,8 +1,6 @@
 package com.xiaoliapp.app.activity;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +13,7 @@ public class ImpressDesActivity extends BaseActivity implements View.OnClickList
 	private FlowLayout layoutTag;
 	private ImageButton buttonAdd;
 	private EditText txtDes;
+	private ScrollView scrollView;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -33,6 +32,8 @@ public class ImpressDesActivity extends BaseActivity implements View.OnClickList
 		txtDes = (EditText) content.findViewById(R.id.activity_impress_des_txt_tag);
 		buttonAdd = (ImageButton) content.findViewById(R.id.activity_impress_des_button_addtag);
 		buttonAdd.setOnClickListener(this);
+
+		scrollView = (ScrollView) content.findViewById(R.id.activity_impress_des_scroll);
 	}
 
 
@@ -64,6 +65,7 @@ public class ImpressDesActivity extends BaseActivity implements View.OnClickList
 			txtTag.setText(tagContent);
 			int position = layoutTag.getChildCount();
 			layoutTag.addView(layout, position - 1);
+			scrollView.fullScroll(ScrollView.FOCUS_DOWN);
 		} else {
 			Toast.makeText(this, "输入内容不能为空", Toast.LENGTH_SHORT).show();
 		}
