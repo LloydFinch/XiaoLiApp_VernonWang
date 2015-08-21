@@ -1,6 +1,5 @@
 package com.xiaoliapp.app.activity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -9,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import com.xiaoliapp.app.R;
+import com.xiaoliapp.app.constants.Constants;
 
 //公共的Activity,向其他Activity提供顶部和底部布局
 public abstract class BaseActivity extends FragmentActivity implements RadioGroup.OnCheckedChangeListener, View
@@ -78,8 +78,9 @@ public abstract class BaseActivity extends FragmentActivity implements RadioGrou
 			default:
 				break;
 		}
-		if (intent.getAction() != null)
+		if (intent.getAction() != null) {
 			startActivity(intent);
+		}
 	}
 
 	public void onClick(View v) {

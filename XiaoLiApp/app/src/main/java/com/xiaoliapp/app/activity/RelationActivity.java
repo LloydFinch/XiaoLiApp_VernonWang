@@ -7,12 +7,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
-import android.widget.RadioGroup;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
+import android.widget.*;
 import com.xiaoliapp.app.R;
 import com.xiaoliapp.app.adapter.CommonPagerAdapter;
+import com.xiaoliapp.app.constants.Constants;
 import com.xiaoliapp.app.fragments.RelationAllFragment;
 import com.xiaoliapp.app.fragments.RelationGroupFragment;
 import com.xiaoliapp.app.librarys.sortlistview.ClearEditText;
@@ -21,7 +19,7 @@ import com.xiaoliapp.app.myview.MyAlertDialog;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RelationActivity extends BaseActivity implements View.OnClickListener, ViewPager.OnPageChangeListener {
+public class RelationActivity extends BaseActivity implements ViewPager.OnPageChangeListener {
 
 	private ClearEditText txtSearch;
 	private RadioGroup tabRadioGroup;
@@ -32,6 +30,8 @@ public class RelationActivity extends BaseActivity implements View.OnClickListen
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		init();
+		RadioButton radioButton = (RadioButton) this.findViewById(R.id.bottom_tab_relation);
+		radioButton.setChecked(true);
 	}
 
 	protected void init() {
@@ -65,9 +65,11 @@ public class RelationActivity extends BaseActivity implements View.OnClickListen
 
 	//处理全部、分组的切换联动
 	public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-		super.onCheckedChanged(group, checkedId);
 		int position = 0;
+
+		Intent intent = new Intent();
+		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
 		switch (checkedId) {
 			case R.id.relation_center_tab_all:
 				position = 0;
@@ -75,8 +77,22 @@ public class RelationActivity extends BaseActivity implements View.OnClickListen
 			case R.id.relation_center_tab_group:
 				position = 1;
 				break;
+
+			//底部Activity的跳转
+			case R.id.bottom_tab_guide:
+				intent.setAction("com.xiaoli.activity.GuideActivity");
+				break;
+			case R.id.bottom_tab_discover:
+				intent.setAction("com.xiaoli.activity.DiscoverActivity");
+				break;
+			case R.id.bottom_tab_profile:
+				intent.setAction("com.xiaoli.activity.ProfileActivity");
+				break;
 			default:
 				break;
+		}
+		if (intent.getAction() != null) {
+			startActivity(intent);
 		}
 		contentPager.setCurrentItem(position);
 	}

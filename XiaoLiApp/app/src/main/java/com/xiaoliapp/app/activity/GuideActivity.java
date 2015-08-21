@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -18,7 +19,7 @@ import com.xiaoliapp.app.fragments.GuideStoryFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GuideActivity extends BaseActivity implements ViewPager.OnPageChangeListener, View.OnClickListener {
+public class GuideActivity extends BaseActivity implements ViewPager.OnPageChangeListener {
 
 
 	private RadioGroup topRadioGroup;
@@ -30,6 +31,8 @@ public class GuideActivity extends BaseActivity implements ViewPager.OnPageChang
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		init();
+		RadioButton radioButton = (RadioButton) this.findViewById(R.id.bottom_tab_guide);
+		radioButton.setChecked(true);
 	}
 
 	protected void init() {
@@ -78,9 +81,9 @@ public class GuideActivity extends BaseActivity implements ViewPager.OnPageChang
 	}
 
 	public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-		super.onCheckedChanged(group, checkedId);
 		int position = 0;
+		Intent intent = new Intent();
+		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
 		switch (checkedId) {
 			case R.id.fragment_guide_top_tab_plan:
 				position = 0;
@@ -88,6 +91,20 @@ public class GuideActivity extends BaseActivity implements ViewPager.OnPageChang
 			case R.id.fragment_guide_top_tab_story:
 				position = 1;
 				break;
+
+			//底部Activity的跳转
+			case R.id.bottom_tab_relation:
+				intent.setAction("com.xiaoli.activity.RelationActivity");
+				break;
+			case R.id.bottom_tab_discover:
+				intent.setAction("com.xiaoli.activity.DiscoverActivity");
+				break;
+			case R.id.bottom_tab_profile:
+				intent.setAction("com.xiaoli.activity.ProfileActivity");
+				break;
+		}
+		if (intent.getAction() != null) {
+			startActivity(intent);
 		}
 		contentPager.setCurrentItem(position);
 	}
